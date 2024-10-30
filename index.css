@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Oxanium", sans-serif;
+}
+
+.body{
+    width: 700px;
+    margin: 0 auto;
+    background-color: #ACC8E5;
+    padding: 10px;
+    color: #112A46;
+}
+
+.nav--list{
+    text-align: center;
+}
+
+#task--input{
+    width: 350px;
+    height: 50px;
+    border-radius: 50px;
+    text-indent: 20px;
+    font-size: 1.2em;
+    border: 2px solid #112A46 ;
+}
+
+.add--btn{
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid #112A46 ;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 16px;
+}
+
+h3{
+    margin-top: 10px;
+}
+
+.task--items{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-top: 20px;
+  background-color: #CFD8E2;
+  padding: 1.5em;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px #112A46 ;
+  text-indent: 15px;
+}
+
+.task--items button{
+    background-color: transparent;
+    border: 0;
+    font-size: 1.3em;
+}
+
+.task--things{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.task--input{
+    border-radius: 4px;
+    border: 0;
+    padding: 8px 5px;
+    margin-top: 5px;
+}
+
+.task--done{
+    color: green;
+}
+
+.task--delete{
+    color: #CC0000;
+}
+
+.bold{
+    font-size: 1.26em;
+    font-weight: 700;
+    margin-left: 19px;
+    margin-bottom: 10px;
+}
+
+#none{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 1.6em;
+}
