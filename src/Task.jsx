@@ -18,6 +18,7 @@ export default function Task() {
                                     <li className="bold">{task.task}</li>
                                     <div className="task--things">
                                         <p>Due Date: {task.date}</p>
+                                        <p>Due Time: {task.time}</p>
                                         <button 
                                             className="task--done" 
                                             onClick={() => areYouDone(task.id)} 

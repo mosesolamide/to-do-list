@@ -8,9 +8,9 @@ export default function Header() {
 
     setInterval(()=>{
         const date = new Date();
-        const hours = date.getHours(); // 0-23
-        const minutes = date.getMinutes(); // 0-59
-        const seconds = date.getSeconds(); // 0-59
+        const hours = String(date.getHours()).padStart(2, '0')
+        const minutes =  String(date.getMinutes()).padStart(2, '0')
+        const seconds = String(date.getSeconds()).padStart(2,'0')
         const currentTime = `Current Time: ${hours}:${minutes}:${seconds}`
         setTime(currentTime)
     },1000)
@@ -23,6 +23,7 @@ export default function Header() {
             <form onSubmit={func}>
                 <input type="text" placeholder="To-Do List" id="task--input" required />
                 <input type="date" className="task--input" id="date" required/>
+                <input type="time" className="task--input time" id="time" required />
                 <button className="add--btn" type="submit">+</button>
             </form>
         </nav>
